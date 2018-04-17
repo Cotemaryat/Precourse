@@ -1,3 +1,4 @@
+
 // Do not change any of the function names
 
 function createUserClass() {
@@ -7,11 +8,35 @@ function createUserClass() {
   // the constructor should have a method 'sayHi' on its prototype that returns the string 'Hello, my name is {{name}}'
   // {{name}} should be the name set on each instance
   // return the class
+  const User = function( userName,name,email,password){
+    this.userName = userName;
+    this.name = name;
+    this.email = email;
+    this password = password;
+    this.sayhi = function(){
+    
+    }
+  const username = new User()
+  const name= new User()
+  const email = new User()
+  const passord = new User()
+  
+  User.prototype.sayHi = function(){;
+  return ('Hello, my nsme is'  + this.name
+          }
+
+  
+  }
+  return User;
 }
 
+               
 function addPrototypeMethod(Constructor) {
   // add a method to the constructor's prototype
   // the method should be called 'sayHi' and should return the string 'Hello World!'
+    
+     contructor.prototype.sayHi = function(){
+       return 'Hello world!';
 }
 
 function addReverseString() {
@@ -19,6 +44,9 @@ function addReverseString() {
   // name this method reverse
   // hint:
   // you will need to use 'this' inside of reverse
+  String.prototype.reverse = function(){
+  return this.split("").reverse().join("");
+  }
 }
 
 // Do not modify code below this line.
